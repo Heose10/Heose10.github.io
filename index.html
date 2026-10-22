@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>허세준 | Game Designer Portfolio</title>
+  <meta name="description" content="마지막 1%의 디테일까지 신경 쓰는 게임 기획자 허세준의 포트폴리오. 레벨 디자인, 전투 기획, 밸런싱.">
+  <meta property="og:title" content="허세준 | Game Designer Portfolio">
+  <meta property="og:description" content="마지막 1%의 디테일까지 신경 쓰는 게임 기획자 허세준입니다.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0b0d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="logo" href="#home" aria-label="홈으로">
+      <span class="logo-mark">SJ<span>.</span></span>
+      <span class="logo-sub">GAME DESIGN<br>PORTFOLIO</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    <nav class="site-nav" id="site-nav">
+      <a href="#about">경험과 성장</a>
+      <a href="#projects">프로젝트</a>
+      <a href="#play">플레이 이력</a>
+      <a href="#skills">엔진 · 도구</a>
+      <a href="#ai">AI 활용</a>
+      <a href="#contact">연락처</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--sm btn--ghost" href="#" data-pending="포트폴리오 PDF">포트폴리오 PDF <span class="arrow">↗</span></a>
+      <a class="btn btn--sm btn--primary" href="#" data-pending="이력서 PDF">이력서 PDF <span class="arrow">↗</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="hero-eyebrow mono">2027 Game Design Portfolio</p>
+        <p class="hero-name mono">Game Designer — Heo Se Jun</p>
+        <h1>마지막 1%의<br>디테일까지<br><em>신경 쓰는 기획자</em><span class="dot">.</span></h1>
+        <p class="hero-lead">
+          섬세한 기획자 <strong>허세준</strong>입니다.<br>
+          레벨과 전투를 직접 만들고, 플레이어의 반응과 수치로 다시 다듬어 왔습니다.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#projects">프로젝트 보기 <span class="arrow">↗</span></a>
+          <a class="btn" href="#wolha">월하일검 트레일러 <span class="arrow">→</span></a>
+        </div>
+        <ul class="tag-list mono">
+          <li>Level Design</li>
+          <li>Combat Design</li>
+          <li>Balancing</li>
+        </ul>
+      </div>
+
+      <div class="hero-feature">
+        <span class="hero-badge mono">Portfolio / 2026</span>
+        <!-- 대표 이미지: data-src 에 키 아트 경로를 넣으세요 -->
+        <div class="media" data-type="image" data-title="월하일검 키 아트" data-ratio="4 / 3" data-src=""></div>
+        <div class="hero-card">
+          <p class="mono">2026 · 교내 프로젝트</p>
+          <p class="hero-card-title">월하일검</p>
+          <p class="hero-card-hanja">月 下 一 劍</p>
+          <p class="hero-card-meta mono">Unreal Engine 5 / Stealth Action</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-foot mono">
+      <span>Scroll to explore ↓</span>
+      <span>Projects <b>02</b> &nbsp; Awards <b>03</b> &nbsp; Exhibitions <b>03</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== QUICK ACCESS ===================== -->
+<section class="quick-access" aria-label="바로가기">
+  <div class="container quick-grid">
+    <a class="quick-item" href="#wolha">
+      <span class="mono">01 / 대표 프로젝트</span>
+      <strong>월하일검</strong>
+      <span class="arrow">↗</span>
+    </a>
+    <a class="quick-item" href="#spear">
+      <span class="mono">02 / 수상 프로젝트</span>
+      <strong>스피어 SPEAR</strong>
+      <span class="arrow">↗</span>
+    </a>
+    <a class="quick-item" href="#ai">
+      <span class="mono">03 / AI &amp; Workflow</span>
+      <strong>AI 툴 활용</strong>
+      <span class="arrow">↗</span>
+    </a>
+  </div>
+</section>
+
+<!-- ===================== 01 ABOUT ===================== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-kicker mono"><span>01 / About &amp; Experience</span><span>From Team Lead to Level Designer</span></div>
+    <div class="section-head reveal">
+      <div>
+        <p class="section-eyebrow mono">My Journey</p>
+        <h2>경험과 성장<span class="dot">.</span></h2>
+      </div>
+      <p class="intro">팀장으로 전투 기획과 프로그래밍을 맡은 첫 프로젝트에서 출발해,<br>언리얼 엔진 레벨 디자인과 전투 피드백 폴리싱까지 경험을 넓혀 왔습니다.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="reveal">
+        <blockquote class="quote-card">
+          <div class="quote-mark">“</div>
+          <p>작은 수치 조정이 체감 난이도를 크게 바꾼다는 것을 경험했습니다.</p>
+          <cite>— 스피어 G-STAR 2023 시연 후 밸런싱 중</cite>
+        </blockquote>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-year">2026</div>
+            <div>
+              <p class="timeline-meta">교내 프로젝트 · 레벨 디자인 / 전투 피드백 폴리싱 · 진행중</p>
+              <h3>월하일검</h3>
+              <p>언리얼 엔진으로 2스테이지 전체를 제작하고, 공격 모션의 리듬과 처형 연출, 카메라 흔들림을 다듬고 있습니다. G-STAR 2026 전시 예정입니다.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-year">2024</div>
+            <div>
+              <p class="timeline-meta">공모전 · 스피어</p>
+              <h3>3개의 인디 게임 공모전 수상</h3>
+              <p>GIGDC 2024 대학부 대상, 스마일게이트 퓨처랩 인디고 2024 최우수상을 받으며 게임성에 대해 깊이 고민한 기간을 인정받았습니다.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-year">2023</div>
+            <div>
+              <p class="timeline-meta">교내 프로젝트 · 팀장 / 전투 기획 및 프로그래밍</p>
+              <h3>스피어 SPEAR</h3>
+              <p>기획자로만 구성된 팀을 이끌며 전투 시스템과 5개 웨이브를 설계했습니다. G-STAR·GEEKS 2023에 전시하고, 시연 피드백으로 밸런싱했습니다.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <aside class="reveal">
+        <div class="profile-card">
+          <!-- 프로필 사진: data-src 에 사진 경로를 넣으세요 -->
+          <div class="media" data-type="image" data-title="프로필 사진" data-src=""></div>
+          <div>
+            <p class="profile-name">허세준</p>
+            <p class="profile-en mono">Heo Se Jun · Game Designer</p>
+            <div class="profile-contact">
+              <a href="mailto:heose10@gmail.com">heose10@gmail.com</a>
+              <a href="tel:01098638339">010. 9863. 8339</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3>EDUCATION</h3>
+          <ul class="info-list">
+            <li><time>2027 예정</time><span>한국IT전문학교 게임기획학과 졸업</span></li>
+            <li><time>2021</time><span>한국IT전문학교 게임기획학과 입학</span></li>
+            <li><time>2020</time><span>동원고등학교 졸업</span></li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>AWARDS</h3>
+          <ul class="info-list">
+            <li><time>2024.11</time><span>GIGDC 2024 대학부 대상</span></li>
+            <li><time>2024.04</time><span>스마일게이트 퓨처랩 인디고 2024 최우수상</span></li>
+            <li><time>2023.12</time><span>GEEKS 2023 어워드 우수상</span></li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>EXHIBITION</h3>
+          <ul class="info-list">
+            <li><time>2026 예정</time><span>G-STAR 2026 — 월하일검</span></li>
+            <li><time>2023</time><span>G-STAR 2023 — 스피어</span></li>
+            <li><time>2023</time><span>GEEKS 2023 — 스피어</span></li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>TOOLS</h3>
+          <div class="skill-icons">
+            <span>Unreal Engine 5</span><span>Unity</span><span>Git</span><span>Claude Code</span><span>Gemini</span><span>ChatGPT</span>
+          </div>
+        </div>
+
+        <div class="info-card info-card--cta">
+          <h3>RESUME / 이력서</h3>
+          <p>학력과 수상, 프로젝트 경험을 한 장에 정리한 이력서입니다.</p>
+          <div class="btn-row">
+            <a class="btn btn--sm" href="#" data-pending="이력서">이력서 보기 <span class="arrow">↗</span></a>
+            <a class="btn btn--sm btn--primary" href="#" data-pending="이력서 PDF">PDF 다운로드 <span class="arrow">↓</span></a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 02 PROJECTS ===================== -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-kicker mono"><span>02 / Selected Projects</span><span>2023 — 2026</span></div>
+    <div class="section-head reveal">
+      <div>
+        <p class="section-eyebrow mono">Selected Works</p>
+        <h2>프로젝트<span class="dot">.</span></h2>
+      </div>
+      <p class="intro">실제 게임 화면을 먼저 보여드립니다.<br>각 프로젝트의 개발 기간과 엔진, 담당 업무를 함께 정리했습니다.</p>
+    </div>
+
+    <!-- ========== PROJECT 01 : 월하일검 ========== -->
+    <article class="project" id="wolha">
+      <div class="project-top">
+        <div class="project-chips">
+          <span class="chip chip--accent">2026 · 교내 프로젝트</span>
+          <span class="chip">대표 프로젝트</span>
+          <span class="chip chip--live">개발 진행중</span>
+        </div>
+        <span class="project-count mono"><b>01</b> / 02</span>
+      </div>
+
+      <div class="project-hero">
+        <div class="reveal">
+          <h3 class="project-title">월하일검<small>月下一劍</small></h3>
+          <ul class="tag-list project-tags mono">
+            <li>Stealth Action</li>
+            <li>Unreal Engine 5</li>
+            <li>2026.03 ~</li>
+          </ul>
+          <p class="project-motto">세키로의 전투는 쉽게, 전투 환경의 선택은 어렵게</p>
+          <p class="project-desc">플레이어가 지속적으로 관찰한 정보를 바탕으로, 스스로 내린 판단을 통해 몰입을 이끌어 내는 3인칭 잠입 액션 게임입니다.</p>
+          <div class="role-box">
+            <span class="mono">My Role</span>
+            <strong>레벨 디자인 · 전투 피드백 폴리싱</strong>
+            <p>2스테이지 전체를 제작하고, 애니메이션·시네마틱 시퀀스·적 가중치·카메라 쉐이킹을 조정했습니다.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="#wolha-level">제작 과정 확인 <span class="arrow">↓</span></a>
+            <a class="btn" href="#wolha-combat">전투 폴리싱 <span class="arrow">↓</span></a>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="media" data-type="video" data-title="월하일검 트레일러" data-src=""></div>
+          <p class="project-media-caption">TRAILER / 2026 · 클릭하면 재생됩니다</p>
+        </div>
+      </div>
+
+      <!-- 레벨 디자인 -->
+      <div class="block" id="wolha-level">
+        <div class="block-head reveal">
+          <div>
+            <p class="block-label mono">Level Design / Stage 2</p>
+            <h3>2스테이지 전체를<br>직접 제작했습니다</h3>
+          </div>
+          <p>더미 레벨을 먼저 만들어 전반적인 흐름을 설계했습니다. 이후 적과 적 동선 경로, 트리거 박스, 파쿠르 트리거, 은신 박스를 배치하고 직접 플레이해 가며 테스트했습니다.</p>
+        </div>
+
+        <div class="point-grid reveal">
+          <div class="point">
+            <span class="point-num">01</span>
+            <h4>관찰 지점</h4>
+            <p>구역마다 관찰 지점을 두어, 전투 구역에 들어가기 전에 적 배치를 먼저 살필 수 있게 했습니다.</p>
+          </div>
+          <div class="point">
+            <span class="point-num">02</span>
+            <h4>2개 이상의 진입 경로</h4>
+            <p>한 구역에 진입 경로를 최소 2개 이상 두고 경로마다 장단점을 설정해, 성향에 맞게 공략 방법을 직접 고르도록 했습니다.</p>
+          </div>
+          <div class="point">
+            <span class="point-num">03</span>
+            <h4>선택에서 오는 유능감</h4>
+            <p>‘전투는 쉽게, 전투 환경을 고르는 과정은 어렵게’에 맞춰, 스스로 고른 경로로 공략에 성공했을 때 유능감을 느끼도록 구성했습니다.</p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <p class="gallery-title mono"><span>Level Play / 2스테이지 플레이</span></p>
+          <div class="media" data-type="video" data-title="2스테이지 레벨 플레이 영상" data-src=""></div>
+
+          <p class="gallery-title mono"><span>Work in Editor / 레벨 작업 모습</span></p>
+          <div class="gallery gallery--feature">
+            <div class="media" data-type="image" data-title="레벨 전경 (탑뷰)" data-src=""></div>
+            <div class="media" data-type="image" data-title="적 동선 경로" data-src=""></div>
+            <div class="media" data-type="image" data-title="트리거 박스 배치" data-src=""></div>
+          </div>
+          <div class="gallery gallery--3" style="margin-top:8px">
+            <div class="media" data-type="image" data-title="파쿠르 트리거" data-src=""></div>
+            <div class="media" data-type="image" data-title="은신 박스" data-src=""></div>
+            <div class="media" data-type="image" data-title="더미 레벨" data-src=""></div>
+          </div>
+
+          <p class="gallery-title mono"><span>In Build / 빌드 시 인 게임 모습</span></p>
+          <div class="gallery gallery--3">
+            <div class="media" data-type="image" data-title="관찰 지점" data-src=""></div>
+            <div class="media" data-type="image" data-title="진입 경로 A" data-src=""></div>
+            <div class="media" data-type="image" data-title="진입 경로 B" data-src=""></div>
+            <div class="media" data-type="image" data-title="지붕 루트" data-src=""></div>
+            <div class="media" data-type="image" data-title="은신 구역" data-src=""></div>
+            <div class="media" data-type="image" data-title="보스 접근로" data-src=""></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 전투 피드백 폴리싱 -->
+      <div class="block" id="wolha-combat">
+        <div class="block-head reveal">
+          <div>
+            <p class="block-label mono">Combat Feedback / Polishing</p>
+            <h3>전투의 손맛을<br>프레임 단위로 다듬었습니다</h3>
+          </div>
+          <p>공격 리듬, 기습 보상, 적 조합, 화면 흔들림처럼 플레이어가 감각으로 받아들이는 부분을 하나씩 문제로 정의하고 조정했습니다.</p>
+        </div>
+
+        <div class="feature-grid reveal">
+          <div class="feature-card">
+            <div class="media" data-type="image" data-title="애니메이션 조정" data-src=""></div>
+            <div class="feature-body">
+              <span class="mono">01 / Animation</span>
+              <h4>애니메이션 조정</h4>
+              <p>공격 시퀀스 프레임은 일정하지만 선딜과 스냅 모션 길이가 시퀀스마다 달라 리듬감이 깨진다고 판단했습니다. 리듬이 일정하게 느껴지도록 각 모션을 수정했습니다.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="media" data-type="image" data-title="시네마틱 시퀀스 조정" data-src=""></div>
+            <div class="feature-body">
+              <span class="mono">02 / Cinematic</span>
+              <h4>시네마틱 시퀀스 조정</h4>
+              <p>패링 타이밍과 동선을 파악해, 기습에 성공한 보상을 극대화하기 위해 처형 시 카메라 연출을 추가했습니다.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="media" data-type="image" data-title="가중치 밸런싱 (DT)" data-src=""></div>
+            <div class="feature-body">
+              <span class="mono">03 / Balancing</span>
+              <h4>가중치 밸런싱</h4>
+              <p>적 유형(방어형·공격형)별로 순찰·경계 중 전진·후퇴·측면 이동 속도와 체력을 조정해, 1:1은 어렵지 않지만 여럿이 모이면 부담스럽게 했습니다.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="media" data-type="image" data-title="카메라 쉐이킹 조정" data-src=""></div>
+            <div class="feature-body">
+              <span class="mono">04 / Camera</span>
+              <h4>카메라 쉐이킹 조정</h4>
+              <p>모든 공방에 같은 단일축 흔들림을 쓰면 반복될수록 무뎌진다고 판단했습니다. 공방은 이펙트·사운드로 충분하다고 제안하고, 피격 시에만 랜덤 흔들림을 적용해 실수에 대한 피드백을 분명하게 했습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="retro">
+        <div class="retro-inner reveal">
+          <div>
+            <p class="block-label mono">Project Note / 2026</p>
+            <h3>감각을 근거로 바꾸는 과정</h3>
+          </div>
+          <div>
+            <p>카메라 흔들림처럼 감각적인 영역일수록, ‘전략적 선택에 대한 보상과 페널티’라는 논리적 근거를 먼저 정리했습니다.</p>
+            <p>그다음 시뮬레이터로 축·강도·주기를 바꿔 가며 블라인드 테스트를 진행해 체감 강도를 확인했습니다.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ========== PROJECT 02 : 스피어 ========== -->
+    <article class="project" id="spear">
+      <div class="project-top">
+        <div class="project-chips">
+          <span class="chip chip--accent">2023 · 교내 프로젝트</span>
+          <span class="chip">공모전 3관왕</span>
+          <span class="chip">G-STAR 2023 전시</span>
+        </div>
+        <span class="project-count mono"><b>02</b> / 02</span>
+      </div>
+
+      <div class="project-hero">
+        <div class="reveal">
+          <h3 class="project-title">SPEAR<small>스피어</small></h3>
+          <ul class="tag-list project-tags mono">
+            <li>Casual Action</li>
+            <li>Unity</li>
+            <li>2023.07 ~ 2023.11</li>
+          </ul>
+          <p class="project-motto">정신없이 회피하고 공격하라</p>
+          <p class="project-desc">플레이어를 쉴 새 없이 조여오는 적들을 모두 찌르고 처치하며, 순간 판단이 연달아 이어져 몰입을 만드는 게임입니다.</p>
+          <div class="role-box">
+            <span class="mono">My Role</span>
+            <strong>팀장 · 디렉팅 · 전투 기획 및 프로그래밍 · 레벨 디자인 · 밸런싱</strong>
+            <p>프로그래머 없이 기획자로만 구성된 팀이었기에, ChatGPT를 활용해 전투 시스템 구현까지 맡았습니다.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="#spear-combat">전투 기획 확인 <span class="arrow">↓</span></a>
+            <a class="btn" href="#spear-field">전시 · 수상 <span class="arrow">↓</span></a>
+          </div>
+        </div>
+        <div class="reveal media-tabs" data-tabs>
+          <div class="media" data-type="video" data-title="스피어 트레일러" data-src="" data-panel="trailer"></div>
+          <div class="media" data-type="video" data-title="스피어 플레이 영상" data-src="" data-panel="play" hidden></div>
+          <div class="tab-buttons">
+            <button class="tab-btn is-active" type="button" data-tab="trailer">▶ 트레일러</button>
+            <button class="tab-btn" type="button" data-tab="play">▶ 플레이 영상</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 전투 기획 -->
+      <div class="block" id="spear-combat">
+        <div class="block-head reveal">
+          <div>
+            <p class="block-label mono">Combat Design</p>
+            <h3>찌르기와 투척이<br>맞물리는 공격 순환</h3>
+          </div>
+          <p>찌르기로 적을 꿰고 투척으로 날리는 공격 순환을 설계했습니다. 창에 꿴 적이 있어야 투척할 수 있어, 두 공격을 번갈아 쓰게 됩니다.</p>
+        </div>
+
+        <ul class="check-list reveal">
+          <li>창 슬롯은 최대 3칸이고, 마지막에 꿴 적이 먼저 발사됩니다. 꿴 순서가 곧 발사 순서가 되어 <em>꿸 대상과 던질 순서를 순간적으로 판단</em>하게 했습니다.</li>
+          <li>적 종류마다 투사체(Normal / AOE)를 따로 지정해 <em>꿴 적에 따라 투척 효과가 달라지게</em> 했습니다. 새 적도 코드 수정 없이 추가할 수 있게 구성했습니다.</li>
+          <li>찌르기 속도와 사거리 등 수치를 명세하고, <em>0.1초 안에 처치한 수만큼 화면 흔들림을 키워</em> 연속 처치일수록 강하게 느껴지도록 했습니다.</li>
+          <li>시연에서 플레이어들이 창에 꿴 적의 순서를 보고 <em>발사 효과에 따라 던질 위치와 타이밍을 고민</em>하는 모습을 확인했습니다.</li>
+        </ul>
+
+        <div class="doc-grid reveal">
+          <div class="doc-card">
+            <div class="media" data-type="doc" data-title="전투 시스템 기획서" data-src=""></div>
+            <div class="doc-body">
+              <span class="mono">Design Doc / 01</span>
+              <h4>전투 시스템 기획서</h4>
+              <p>창 공격·창 슬롯 시스템, 찌르기·투척 순서도와 수치 명세를 정리한 문서입니다.</p>
+              <div class="btn-row">
+                <a class="btn btn--sm" href="#" data-pending="전투 시스템 기획서">문서 보기 <span class="arrow">↗</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="doc-card">
+            <div class="media" data-type="doc" data-title="전투 컨셉 기획서" data-src=""></div>
+            <div class="doc-body">
+              <span class="mono">Design Doc / 02</span>
+              <h4>전투 컨셉 기획서</h4>
+              <p>핵심 설정, 찌르기와 투척, 조작 방식과 플레이 예시를 그림으로 정리한 문서입니다.</p>
+              <div class="btn-row">
+                <a class="btn btn--sm" href="#" data-pending="전투 컨셉 기획서">문서 보기 <span class="arrow">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 레벨 디자인 -->
+      <div class="block" id="spear-level">
+        <div class="block-head reveal">
+          <div>
+            <p class="block-label mono">Level Design / 5 Waves</p>
+            <h3>웨이브마다<br>하나의 행동을 요구</h3>
+          </div>
+          <p>원형 맵에 출현 위치와 적 종류를 배치해 5개 웨이브를 설계했습니다. 웨이브마다 이동·찌르기·점프 중 하나를 집중적으로 요구하고, 다음 웨이브에서 겹쳐 쓰게 했습니다.</p>
+        </div>
+
+        <div class="wave-grid reveal">
+          <div class="wave">
+            <div class="wave-head"><b>01</b><span>WAVE</span></div>
+            <div class="media" data-type="image" data-title="웨이브 1" data-ratio="1 / 1" data-src=""></div>
+            <p>원형 맵에서 기본 이동과 찌르기로 시작하는 첫 웨이브입니다.</p>
+          </div>
+          <div class="wave">
+            <div class="wave-head"><b>02</b><span>이동</span></div>
+            <div class="media" data-type="image" data-title="웨이브 2" data-ratio="1 / 1" data-src=""></div>
+            <p>플레이어와 같은 속도의 지상몹과 공중몹을 함께 배치해, 지상몹을 따돌리며 공중몹부터 처리하는 이동 판단을 요구했습니다.</p>
+          </div>
+          <div class="wave">
+            <div class="wave-head"><b>03</b><span>찌르기</span></div>
+            <div class="media" data-type="image" data-title="웨이브 3" data-ratio="1 / 1" data-src=""></div>
+            <p>화면 위쪽에서 차례로 돌진하는 공중몹을 배치했습니다. 이동이나 점프로는 피하기 어려워 찌르기로 받아치도록 유도했습니다.</p>
+          </div>
+          <div class="wave">
+            <div class="wave-head"><b>04</b><span>중간 보스</span></div>
+            <div class="media" data-type="image" data-title="웨이브 4" data-ratio="1 / 1" data-src=""></div>
+            <p>중간 보스가 바닥에 남긴 오브젝트는 창에 꿰어 무기로 쓸 수 있게 했습니다.</p>
+          </div>
+          <div class="wave">
+            <div class="wave-head"><b>05</b><span>점프</span></div>
+            <div class="media" data-type="image" data-title="웨이브 5" data-ratio="1 / 1" data-src=""></div>
+            <p>지상 탄막과 공중몹을 함께 배치해, 점프로 피하면서 공중몹을 처치하도록 했습니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 밸런싱 -->
+      <div class="block" id="spear-balance">
+        <div class="block-head reveal">
+          <div>
+            <p class="block-label mono">Balancing / G-STAR 2023</p>
+            <h3>시연에서 찾은<br>밀도 문제</h3>
+          </div>
+          <p>웨이브 매니저를 만들어 적 위치, 출현 타이밍, 이동 방향, 다음 스폰 조건(남은 적 수)을 인스펙터에서 바로 수정하며 밸런싱할 수 있게 했습니다. G-STAR 2023 시연에서 <em>웨이브 3~4 구간의 밀도가 높아</em> 중간에 포기하는 플레이어가 많은 문제를 확인했습니다.</p>
+        </div>
+
+        <div class="compare reveal">
+          <div>
+            <span class="compare-label mono"><b>Before</b> / 수정 전</span>
+            <div class="media" data-type="image" data-title="웨이브 3~4 수정 전" data-ratio="4 / 3" data-src=""></div>
+          </div>
+          <div>
+            <span class="compare-label mono"><b>After</b> / 수정 후</span>
+            <div class="media" data-type="image" data-title="웨이브 3~4 수정 후" data-ratio="4 / 3" data-src=""></div>
+          </div>
+          <div>
+            <span class="compare-label mono"><b>Tool</b> / Wave Manager</span>
+            <div class="media" data-type="image" data-title="웨이브 매니저 인스펙터" data-ratio="4 / 3" data-src=""></div>
+          </div>
+        </div>
+
+        <div class="stat-row reveal">
+          <div class="stat"><b>3 → 2</b><span>지상 적 이동 속도 (플레이어와 동일)</span></div>
+          <div class="stat"><b>−1</b><span>웨이브별 소환 수 1마리씩 감소</span></div>
+          <div class="stat"><b>W3–4</b><span>이탈이 몰린 구간 재조정</span></div>
+        </div>
+
+        <p class="reveal" style="color:var(--soft)">거리를 벌리며 처치 순서를 고를 여유를 만들었습니다. PC 공격 범위, 적 이동 속도, 출현 타이밍과 위치 같은 <em>작은 수치 조정이 체감 난이도를 크게 바꾼다</em>는 것을 경험했습니다.</p>
+      </div>
+
+      <!-- 전시 & 수상 -->
+      <div class="block" id="spear-field">
+        <div class="block-head reveal">
+          <div>
+            <p class="block-label mono">Field Experience / Exhibition &amp; Awards</p>
+            <h3>플레이어 옆에서<br>직접 관찰했습니다</h3>
+          </div>
+          <p>제작한 게임을 G-STAR, GEEKS 등의 행사에 전시해, 플레이어들이 의도한 부분을 어떻게 느끼는지, 경험이 어땠는지, 부정적인 경험이 있었는지 직접 관찰하며 대화했습니다. 당일 행사가 끝난 후에도 피드백을 바탕으로 밸런싱을 했습니다.</p>
+        </div>
+
+        <div class="award-grid reveal">
+          <div class="award"><time>2024.11</time><h4>GIGDC 2024</h4><p>대학부 대상</p></div>
+          <div class="award"><time>2024.04</time><h4>스마일게이트 퓨처랩 인디고 2024</h4><p>최우수상</p></div>
+          <div class="award"><time>2023.12</time><h4>GEEKS 2023 어워드</h4><p>우수상</p></div>
+        </div>
+
+        <div class="reveal">
+          <p class="gallery-title mono"><span>G-STAR 2023 / 전시 현장</span></p>
+          <div class="gallery gallery--3">
+            <div class="media" data-type="image" data-title="시연 현장 1" data-src=""></div>
+            <div class="media" data-type="image" data-title="시연 현장 2" data-src=""></div>
+            <div class="media" data-type="image" data-title="팀 단체 사진" data-src=""></div>
+            <div class="media" data-type="image" data-title="부스 전경" data-src=""></div>
+            <div class="media" data-type="image" data-title="시연 현장 3" data-src=""></div>
+            <div class="media" data-type="image" data-title="시연 현장 4" data-src=""></div>
+          </div>
+
+          <p class="gallery-title mono"><span>Awards / 수상 현장</span></p>
+          <div class="gallery gallery--3">
+            <div class="media" data-type="image" data-title="GIGDC 2024 대학부 대상" data-ratio="4 / 3" data-src=""></div>
+            <div class="media" data-type="image" data-title="퓨처랩 인디고 2024 최우수상" data-ratio="4 / 3" data-src=""></div>
+            <div class="media" data-type="image" data-title="GEEKS 2023 우수상" data-ratio="4 / 3" data-src=""></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="retro">
+        <div class="retro-inner reveal">
+          <div>
+            <p class="block-label mono">Project Retrospective / 2023</p>
+            <h3>기획자로서의 기쁨과 보람</h3>
+          </div>
+          <div>
+            <p>스피어로 3개의 인디 게임 창작 공모전에서 수상하며, 게임성에 대해 깊이 고민했던 기간을 인정받았습니다.</p>
+            <p>이 경험을 통해 기획자로서 큰 기쁨과 보람을 느꼈고, 게임 기획에 더 큰 관심을 가지게 됐습니다. 교내 프로젝트를 거치며 기획적 성장, 논리적 사고, 개발 소통 역량을 함께 키워 갔습니다.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== 03 PLAY HISTORY ===================== -->
+<section class="section" id="play">
+  <div class="container">
+    <div class="section-kicker mono"><span>03 / Play History</span><span>PC · Mobile · Console · itch.io</span></div>
+    <div class="section-head reveal">
+      <div>
+        <p class="section-eyebrow mono">Player First</p>
+        <h2>플레이 이력<span class="dot">.</span></h2>
+      </div>
+      <p class="intro">PC, 모바일, 콘솔, 웹 사이트(itch.io) 등 다양한 플랫폼에서<br>슈터, 어드벤처, RPG 등 다양한 장르의 게임을 플레이했습니다.</p>
+    </div>
+
+    <div class="stat-row reveal" style="margin-top:0">
+      <div class="stat"><b>2,000h</b><span>배틀그라운드 플레이 시간</span></div>
+      <div class="stat"><b>150만 원</b><span>배틀그라운드 누적 결제</span></div>
+      <div class="stat"><b>TOP 100</b><span>디제이맥스 리스펙트 V 랭커 도달</span></div>
+      <div class="stat"><b>70+</b><span>직접 작성한 스팀 평가</span></div>
+    </div>
+
+    <!-- 게임 커버: 각 .media 의 data-src 에 커버 이미지 경로를 넣으세요 -->
+    <div class="genre-board reveal">
+      <div class="genre">
+        <h3>슈터</h3>
+        <ul>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>배틀그라운드</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>헬다이버즈 2</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>레디 오어 낫</span></li>
+        </ul>
+      </div>
+      <div class="genre">
+        <h3>로그라이크</h3>
+        <ul>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>아이작의 번제</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>슬레이 더 스파이어</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>발라트로</span></li>
+        </ul>
+      </div>
+      <div class="genre">
+        <h3>어드벤처</h3>
+        <ul>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>언차티드 4</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>더 라스트 가디언</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>오리와 눈먼 숲</span></li>
+        </ul>
+      </div>
+      <div class="genre">
+        <h3>RPG</h3>
+        <ul>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>테일즈 오브 데스티니 2</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>다크 소울 3</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>블루 아카이브</span></li>
+        </ul>
+      </div>
+      <div class="genre">
+        <h3>플랫포머</h3>
+        <ul>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>셀레스트</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>잭 3</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>슈퍼 마리오 갤럭시 2</span></li>
+        </ul>
+      </div>
+      <div class="genre">
+        <h3>오픈월드</h3>
+        <ul>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>팰월드</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>엘든 링</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>젤다의 전설 BotW</span></li>
+        </ul>
+      </div>
+      <div class="genre genre--wide">
+        <h3>기타</h3>
+        <ul>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>이터널 리턴</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>돈 스타브 투게더</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>바바 이즈 유</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>하스스톤</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>DJMAX RESPECT V</span></li>
+          <li class="game"><div class="media" data-type="image" data-src=""></div><span>단간론파</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block reveal" style="padding-left:0;padding-right:0;margin-top:64px">
+      <div class="block-head">
+        <div>
+          <p class="block-label mono">Game Analysis &amp; Reviews</p>
+          <h3>게임 분석 &amp;<br>평가 기록</h3>
+        </div>
+        <p>각 게임의 디테일을 분석하고 약 70개의 스팀 평가를 남겼습니다. 이러한 경험으로 프로젝트에서 필요한 레퍼런스 탐색이 원활했고, <em>경험에 기반한 기획 논리성</em>을 쌓아 갔습니다.</p>
+      </div>
+      <div class="gallery gallery--4">
+        <div class="media" data-type="image" data-title="스팀 평가 01" data-ratio="3 / 4" data-src=""></div>
+        <div class="media" data-type="image" data-title="스팀 평가 02" data-ratio="3 / 4" data-src=""></div>
+        <div class="media" data-type="image" data-title="스팀 평가 03" data-ratio="3 / 4" data-src=""></div>
+        <div class="media" data-type="image" data-title="스팀 평가 04" data-ratio="3 / 4" data-src=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 04 SKILLS ===================== -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-kicker mono"><span>04 / Tools &amp; Skills</span><span>Engine Experience</span></div>
+    <div class="section-head reveal">
+      <div>
+        <p class="section-eyebrow mono">Hands-on Experience</p>
+        <h2>엔진과 도구<span class="dot">.</span></h2>
+      </div>
+      <p class="intro">프로젝트에서 실제로 다뤄 본 기능만 정리했습니다.<br>무엇을 왜 조정했는지를 함께 적었습니다.</p>
+    </div>
+
+    <article class="engine-card engine-card--main reveal">
+      <div class="engine-body">
+        <div class="engine-badge"><b>UE5</b><span class="mono">Unreal Engine 5</span></div>
+        <h3>Behavior Tree · 애니메이션 · 머티리얼 · 파티클</h3>
+        <ul class="check-list">
+          <li>NPC 행동을 <em>복귀·대기·순찰</em> 상태로 나눈 Behavior Tree를 구성했습니다. 활동 범위를 벗어나면 시작 위치로 돌아가고, 타깃이 없으면 순찰합니다.</li>
+          <li>시야·활동·순찰 범위를 <em>데이터 테이블(DT) 값</em>으로 받아, 노드를 고치지 않고 수치만 바꿔 적마다 다르게 행동하도록 했습니다.</li>
+          <li>공격 몽타주에 블렌드 인·아웃 커브와 공격 판정·사운드·트레일 노티파이를 프레임 단위로 배치해 타격 타이밍을 맞췄습니다.</li>
+          <li>처형 연출은 시퀀서 카메라 키프레임으로 만들어 기습 성공 순간을 강조했습니다.</li>
+          <li>마스터 머티리얼(MM_Structure)의 색상·텍스처를 파라미터로 열어 두고, 인스턴스만 바꿔 목재·석재 질감을 만들어 건물에 적용했습니다.</li>
+          <li>나이아가라 불꽃 이펙트의 불티 이미터에서 알파 커브와 스프라이트 크기를 조정해, 레벨의 화로에 어울리는 작은 불꽃으로 배치했습니다.</li>
+        </ul>
+        <p class="engine-foot mono">Level Design · Behavior Tree · Sequencer · Material · Niagara</p>
+      </div>
+      <div class="engine-gallery">
+        <div class="media" data-type="image" data-title="Behavior Tree" data-ratio="4 / 3" data-src=""></div>
+        <div class="media" data-type="image" data-title="블루프린트" data-ratio="4 / 3" data-src=""></div>
+        <div class="media" data-type="image" data-title="애니메이션 몽타주" data-ratio="4 / 3" data-src=""></div>
+        <div class="media" data-type="image" data-title="시퀀서 처형 연출" data-ratio="4 / 3" data-src=""></div>
+        <div class="media" data-type="image" data-title="머티리얼 인스턴스" data-ratio="4 / 3" data-src=""></div>
+        <div class="media" data-type="image" data-title="나이아가라 파티클" data-ratio="4 / 3" data-src=""></div>
+      </div>
+    </article>
+
+    <div class="engine-pair">
+      <article class="engine-card reveal">
+        <div class="media" data-type="image" data-title="유니티 쿼터뷰 3D 액션" data-src=""></div>
+        <div class="engine-body">
+          <div class="engine-badge"><b>UNITY</b><span class="mono">Unity</span></div>
+          <h3>쿼터뷰 3D 액션으로 엔진 구조 학습</h3>
+          <ul class="check-list">
+            <li>쿼터뷰 3D 액션 게임을 만들며 씬, 프리팹, 컴포넌트 같은 엔진의 기본 구조를 익혔습니다.</li>
+            <li>플레이어의 이동 속도·점프력과 탄약·체력·수류탄 최대치를 인스펙터에서 바로 조정할 수 있게 구성했습니다.</li>
+            <li>근접(해머)·원거리(핸드건, 서브머신건) 무기와 수류탄을 만들고, 총알에는 트레일 렌더러로 궤적을 표시했습니다.</li>
+            <li>적은 내비메시(AI Navigation)로 장애물을 피해 플레이어를 추적하도록 했습니다.</li>
+          </ul>
+          <p class="engine-foot mono">Prototyping · Inspector Balancing · NavMesh</p>
+        </div>
+      </article>
+
+      <article class="engine-card reveal">
+        <div class="media" data-type="image" data-title="GitLab 저장소 / 커밋 기록" data-src=""></div>
+        <div class="engine-body">
+          <div class="engine-badge"><b>GIT</b><span class="mono">GitLab · Git LFS</span></div>
+          <h3>깃을 활용한 협업</h3>
+          <ul class="check-list">
+            <li>월하일검 팀 저장소(GitLab)에서 2스테이지 작업용 브랜치(Level2)를 따로 두고 작업했습니다.</li>
+            <li>master를 주기적으로 병합해 다른 팀원의 변경을 먼저 반영한 뒤 레벨 파일(LV_heose.umap)을 올렸습니다.</li>
+            <li>명령줄에서 fetch → status → add → commit → push 순서로 작업하고, 대용량 에셋은 Git LFS로 올렸습니다.</li>
+          </ul>
+          <div class="stat-row" style="margin:24px 0 0">
+            <div class="stat"><b>2,101</b><span>저장소 커밋</span></div>
+            <div class="stat"><b>7</b><span>브랜치</span></div>
+          </div>
+          <p class="engine-foot mono">2026.05 ~ 팀원들과 함께 작업</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 05 AI ===================== -->
+<section class="section" id="ai">
+  <div class="container">
+    <div class="section-kicker mono"><span>05 / AI &amp; Workflow</span><span>Verify · Analyze · Simulate</span></div>
+    <div class="section-head reveal">
+      <div>
+        <p class="section-eyebrow mono">Workflow Experiments</p>
+        <h2>AI 툴 활용<span class="dot">.</span></h2>
+      </div>
+      <p class="intro">AI를 결과물을 대신 만드는 도구가 아니라,<br>감각적인 판단을 수치와 근거로 검증하는 도구로 활용했습니다.</p>
+    </div>
+
+    <article class="ai-feature reveal">
+      <div class="ai-feature-body">
+        <span class="tool-badge"><span>Claude Code</span></span>
+        <h3>레벨 동선을<br>시뮬레이터로 검증</h3>
+        <ul class="check-list">
+          <li>LV_heose 레벨의 내비메시와 액터 배치를 읽어 <em>7개 구역</em>으로 나누고, 체크포인트 순서대로 이동하는 시뮬레이터를 만들었습니다.</li>
+          <li>적의 시야와 순찰 경로를 함께 계산해 <em>발각 지점</em>과 구역별 도착 시간을 확인했습니다.</li>
+          <li>플레이어와 적의 체력·데미지·콤보 시간을 넣어 적별 처치 시간과 플레이어가 버티는 시간을 계산해 구역 난이도를 비교했습니다.</li>
+          <li>구역마다 적·순찰·은신처·파쿠르 지점 수를 정리해 <em>진입 경로가 의도대로 배치됐는지</em> 점검했습니다.</li>
+        </ul>
+        <a class="btn btn--primary" href="#" data-pending="레벨 동선 시뮬레이터">시뮬레이터 화면 보기 <span class="arrow">↗</span></a>
+      </div>
+      <div class="media" data-type="image" data-title="월하일검 레벨 동선 시뮬레이터" data-src=""></div>
+    </article>
+
+    <div class="ai-grid">
+      <article class="ai-card reveal">
+        <div class="media" data-type="image" data-title="스피어 전투 시스템 프로그래밍" data-src=""></div>
+        <div class="ai-card-body">
+          <span class="tool-badge"><span>ChatGPT</span></span>
+          <h3>스피어 전투 시스템 프로그래밍</h3>
+          <p>원하는 동작을 짧은 예시 코드로 먼저 작성해 함께 전달하고, ‘[투사체가 벽에 닿으면 삭제]’처럼 조건 단위로 요청했습니다.</p>
+          <p class="highlight">창이 나아가고 돌아올 때 회전값이 바뀌는 문제를 발견해, 복귀 중에는 회전값을 고정하도록 직접 수정했습니다.</p>
+          <div class="btn-row"><a class="btn btn--sm" href="#" data-pending="작업 자료">작업 자료 보기 <span class="arrow">↗</span></a></div>
+        </div>
+      </article>
+
+      <article class="ai-card reveal">
+        <div class="media" data-type="image" data-title="카메라 흔들림 시뮬레이터" data-src=""></div>
+        <div class="ai-card-body">
+          <span class="tool-badge"><span>Gemini</span><span>Claude Code</span></span>
+          <h3>월하일검 카메라 움직임</h3>
+          <p>같은 단일축 흔들림이 반복될수록 자극에 익숙해지고 피로가 쌓인다고 판단해, Gemini와의 질의응답으로 ‘전략적 선택에 대한 보상과 페널티’라는 근거를 정리했습니다.</p>
+          <p class="highlight">흔들림 시뮬레이터로 축·강도·주기·유지 시간을 바꿔 가며 블라인드 테스트로 체감 강도를 확인했습니다.</p>
+          <div class="btn-row"><a class="btn btn--sm" href="#" data-pending="흔들림 시뮬레이터">시뮬레이터 보기 <span class="arrow">↗</span></a></div>
+        </div>
+      </article>
+
+      <article class="ai-card reveal">
+        <div class="media" data-type="image" data-title="프레임 분석 도구" data-src=""></div>
+        <div class="ai-card-body">
+          <span class="tool-badge"><span>Frame Analysis</span></span>
+          <h3>월하일검 애니메이션 조정</h3>
+          <p>공격마다 칼이 가장 빠른 순간과 동작이 멈추는 순간을 분석하게 해, 선딜 길이가 제각각이라 연타 시 타격 간격이 고르지 않다는 점을 찾았습니다.</p>
+          <p class="highlight">레퍼런스인 세키로를 분석해 ‘전투는 쉽게’를 프레임 수치로 정리했습니다. (평타 선딜 약 12~14f, 패링 판정 30f) 선딜·스냅·후딜 값을 UE 몽타주의 Play Rate로 옮겨 적용했습니다.</p>
+          <div class="btn-row"><a class="btn btn--sm" href="#" data-pending="프레임 분석 자료">분석 자료 보기 <span class="arrow">↗</span></a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 06 CONTACT ===================== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-kicker mono"><span>06 / Contact</span><span>Thank you</span></div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="section-eyebrow mono">Let's Talk</p>
+        <h2>마지막 1%까지,<br>끝까지 다듬겠습니다<span class="dot">.</span></h2>
+        <p class="contact-lead">포트폴리오를 확인해 주셔서 감사합니다.<br>프로젝트와 기획서에 관한 문의는 이메일 또는 전화로 연락해 주세요.</p>
+        <div class="contact-links">
+          <a href="mailto:heose10@gmail.com">heose10@gmail.com <span>↗</span></a>
+          <a href="tel:01098638339">010. 9863. 8339 <span>↗</span></a>
+        </div>
+      </div>
+      <div class="contact-card reveal">
+        <p class="mono">Portfolio / Download</p>
+        <p class="contact-card-name">HEO<br>SE JUN.</p>
+        <a class="btn" href="#" data-pending="이력서 PDF">이력서 PDF 다운로드 <span class="arrow">↓</span></a>
+        <a class="btn" href="#" data-pending="포트폴리오 PDF">포트폴리오 PDF 다운로드 <span class="arrow">↓</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Heo Se Jun. Game Designer Portfolio.</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
