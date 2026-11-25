@@ -6,6 +6,7 @@
 
    - data-src 가 비어 있으면 자리표시(placeholder) 레이아웃이 그려집니다.
    - video : 유튜브 주소(https://youtu.be/xxxx) 또는 mp4 경로
+             data-poster="이미지 경로" 로 재생 전 표지 이미지를 지정합니다.
    - image : 이미지 경로 (예: assets/img/wolha/key-art.jpg)
    - doc   : PDF 경로 (예: assets/docs/spear-combat.pdf)
    - data-ratio="4 / 3" 처럼 비율을 바꿀 수 있습니다. (기본 16 / 9)
@@ -50,9 +51,10 @@
     if (type === 'video') {
       const id = youtubeId(src);
       if (id) {
+        const poster = el.dataset.poster || `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
         el.innerHTML =
           `<button class="media-play" type="button" aria-label="${esc(title)} 재생">` +
-          `<img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy">` +
+          `<img src="${esc(poster)}" alt="" loading="lazy">` +
           `<span class="play-icon">${ICONS.play}</span></button>`;
         el.querySelector('button').addEventListener('click', () => {
           el.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" title="${esc(title)}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
