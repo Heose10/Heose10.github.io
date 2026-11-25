@@ -9,6 +9,9 @@
    - image : 이미지 경로 (예: assets/img/wolha/key-art.jpg)
    - doc   : PDF 경로 (예: assets/docs/spear-combat.pdf)
    - data-ratio="4 / 3" 처럼 비율을 바꿀 수 있습니다. (기본 16 / 9)
+   - data-fit="contain" 이면 이미지를 자르지 않고 전체를 보여 줍니다.
+   - data-pos="50% 0%" 로 잘리는 기준 위치를 정할 수 있습니다.
+   - 이미지를 클릭하면 크게 볼 수 있습니다.
    ========================================================= */
 (() => {
   document.documentElement.classList.add('js');
@@ -61,10 +64,37 @@
       el.innerHTML = `<a class="media-doc" href="${esc(src)}" target="_blank" rel="noopener">${ICONS.doc}<span>${esc(title || '문서 열기')} ↗</span></a>`;
     } else {
       el.innerHTML = `<img src="${esc(src)}" alt="${esc(title)}" loading="lazy">`;
+      const img = el.querySelector('img');
+      if (el.dataset.fit) img.style.objectFit = el.dataset.fit;
+      if (el.dataset.pos) img.style.objectPosition = el.dataset.pos;
+      el.classList.add('is-zoomable');
     }
   }
 
   document.querySelectorAll('.media').forEach(renderMedia);
+
+  /* ---------- 이미지 확대 보기 ---------- */
+  const lightbox = document.createElement('div');
+  lightbox.className = 'lightbox';
+  lightbox.setAttribute('role', 'dialog');
+  lightbox.setAttribute('aria-modal', 'true');
+  lightbox.innerHTML = '<button class="lightbox-close" type="button" aria-label="닫기">×</button><img alt=""><p class="lightbox-caption"></p>';
+  document.body.appendChild(lightbox);
+  const lbImg = lightbox.querySelector('img');
+  const lbCaption = lightbox.querySelector('.lightbox-caption');
+  const closeLightbox = () => { lightbox.classList.remove('is-open'); document.body.style.overflow = ''; };
+  document.addEventListener('click', (e) => {
+    const media = e.target.closest('.media.is-zoomable');
+    if (!media) return;
+    const img = media.querySelector('img');
+    lbImg.src = img.currentSrc || img.src;
+    lbImg.alt = img.alt;
+    lbCaption.textContent = img.alt;
+    lightbox.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  });
+  lightbox.addEventListener('click', (e) => { if (e.target !== lbImg) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
 
   /* ---------- 영상 탭 전환 ---------- */
   document.querySelectorAll('[data-tabs]').forEach((wrap) => {

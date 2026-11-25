@@ -25,6 +25,10 @@ assets/js/main.js     미디어 슬롯 렌더링, 메뉴, 스크롤 효과
 | `doc`     | `assets/docs/spear-combat.pdf` |
 
 비율은 `data-ratio="4 / 3"`처럼 바꿀 수 있습니다. (기본 16 / 9)
+`data-fit="contain"`은 이미지를 자르지 않고 전체를 보여 주고, `data-pos="50% 0%"`는 잘리는 기준 위치를 정합니다.
+이미지는 클릭하면 크게 볼 수 있습니다.
+
+이미지 원본은 `assets/img/`에 프로젝트별로 들어 있습니다. (PPT에서 추출해 웹용 JPEG로 줄인 파일)
 
 ## 준비 중 링크
 
